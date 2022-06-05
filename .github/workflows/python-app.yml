@@ -31,7 +31,7 @@ jobs:
         pipenv install
     - name: Install Playwright browsers
       run: |
-        playwright install
+        pipenv run playwright install
     - name: Test with pytest
       run: |
         pipenv run pytest
